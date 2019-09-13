@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
 	"net/http"
 	"os"
@@ -17,12 +18,23 @@ import (
 )
 
 var (
-	addr  = flag.String("config", ":9887", "An address to listen on for web interface and telemetry.")
-	users = flag.String("users", "tommymuehle", "Comma separated list of Speakerdeck users to watch.")
+	version   string = "latest"
+	gitCommit string = "undefined"
+)
+
+var (
+	addr  = flag.String("addr", ":9887", "An address to listen on for web interface and telemetry.")
+	users = flag.String("users", "tommymuehle,fabpot", "Comma separated list of Speakerdeck users to watch.")
+	v     = flag.Bool("version", false, "Prints current version")
 )
 
 func main() {
 	flag.Parse()
+
+	if *v {
+		fmt.Println(version + "-" + gitCommit)
+		os.Exit(0)
+	}
 
 	client := internalClient.NewSpeakerDeckClient(&internalClient.RealHttpClient{})
 	collector := internalCollector.NewSpeakerDeckCollector(client, *users)

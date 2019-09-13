@@ -36,5 +36,7 @@ Usage of ./speakerdeck-exporter:
     An address to listen on for web interface and telemetry.
 -users
     Comma separated list of Speakerdeck users to watch.
+-version
+    Prints the current version.
 
 ```
