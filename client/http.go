@@ -11,6 +11,7 @@ type httpClient interface {
 	fetchData(url string) (*goquery.Document, error)
 }
 
+// RealHttpClient is a wrapper to make real HTTP requests.
 type RealHttpClient struct{}
 
 func (c *RealHttpClient) fetchData(url string) (*goquery.Document, error) {
