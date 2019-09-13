@@ -40,3 +40,9 @@ Usage of ./speakerdeck-exporter:
     Prints the current version.
 
 ```
+
+## Grafana
+
+An example dashboard in Grafana could look like [this](grafana/dashboard.json):
+
+![dashboard](grafana/dashboard.png)
