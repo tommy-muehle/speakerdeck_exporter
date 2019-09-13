@@ -14,11 +14,11 @@ SpeakerDeck Prometheus exporter makes it possible to monitor stats of various de
 * ```speakerdeck_scrape_collector_duration_seconds```  
   Duration of the last metric scrape in seconds.
 * ```speakerdeck_stars```  
-  The stars of a deck an by an author. For example:
-  speakerdeck_stars{author="tommymuehle",deck="Defensive programming"}
+  The stars of a deck and by an author.
 * ```speakerdeck_views```  
-  The stars of a deck an by an author. For example:
-  speakerdeck_views{author="tommymuehle",deck="Defensive programming"}
+  The stars of a deck and by an author.
+  
+An example set of metrics can be found [here](METRICS.md).
 
 ## Prerequisites
 
