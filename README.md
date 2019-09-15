@@ -6,6 +6,7 @@ SpeakerDeck Prometheus exporter makes it possible to monitor stats of various de
 
 [![Build Status](https://travis-ci.org/tommy-muehle/speakerdeck_exporter.svg?branch=master)](https://travis-ci.org/tommy-muehle/speakerdeck_exporter)
 [![Go Report Card](https://goreportcard.com/badge/github.com/tommy-muehle/speakerdeck_exporter)](https://goreportcard.com/report/github.com/tommy-muehle/speakerdeck_exporter)
+[![codecov](https://codecov.io/gh/tommy-muehle/speakerdeck_exporter/branch/master/graph/badge.svg)](https://codecov.io/gh/tommy-muehle/speakerdeck_exporter)
 
 ## Exported Metrics
 
