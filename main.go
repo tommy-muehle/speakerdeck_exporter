@@ -36,7 +36,7 @@ func main() {
 		os.Exit(0)
 	}
 
-	client := internalClient.NewSpeakerDeckClient(&internalClient.RealHttpClient{})
+	client := internalClient.NewSpeakerDeckClient(internalClient.NewRealHttpClient())
 	collector := internalCollector.NewSpeakerDeckCollector(client, *users)
 
 	registry := prometheus.NewRegistry()
